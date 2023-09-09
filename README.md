@@ -18,7 +18,7 @@ GameFiesta is a gaming website dedicated to providing a fun and immersive gaming
 
 ## Getting Started
 
-To get started with GameFiesta, simply visit our website at [www.gamefiesta.com](https://www.gamefiesta.com) and create an account. Once you're logged in, you can browse and explore to your heart's content.
+To get started with GameFiesta, simply visit our website at [www.gamefiesta.com](https://anshv-dev.github.io/Live-the-code/) and create an account. Once you're logged in, you can browse and explore to your heart's content.
 
 ## Contributing
 
