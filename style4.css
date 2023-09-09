@@ -1,0 +1,247 @@
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+/* ...............................section01 ................................................*/
+.section01{
+    min-height: 100vh;
+    width: 100%;
+    background-color: black;
+}
+.first{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+}
+.heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.heading h1{
+    color: white;
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 50px;
+}
+.heading h2{
+    color: white;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 30px;
+}
+.form{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 60px;
+}
+.form form{
+    margin: 20px;
+    height: 300px;
+    width: 200px;
+}
+.form img{
+   
+    height: 300px;
+    width: 200px;
+    
+   position: absolute;
+    background-size: cover;
+    border-radius: 300px;
+    margin-bottom: 150px;
+    box-shadow: 3px 3px 5px blueviolet;
+}
+
+.scroll{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.scroll img{
+    max-width: 20px;
+    max-height: 20px;
+}
+.scroll h3{
+    color: aliceblue;
+}
+/*   ...................... section1.................. */
+.section1{
+    min-height: 100vh;
+    background-color: black;
+    width: 100%;
+}
+.all1{
+    
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+.all1_img img{
+    margin: 90px;
+   
+    width: 100%;
+    max-height: 500px;
+    box-shadow: 3px 3px 5px blueviolet;
+    border-radius: 200px;
+
+}
+.all1_matter{
+    margin-left: 200px;
+}
+.all1 h2{
+    margin: 100px;
+    color: aliceblue;
+    font-size: 3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+
+    position: relative;
+    animation-name: matter1_h2;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+
+}
+@keyframes matter1_h2{
+    from{
+        left: 0px;
+
+    }
+    to{
+        left:100px
+    }
+}
+.all1 h1{
+    margin: 50px;
+    color: aliceblue;
+    font-size: 5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.all1 a{
+    
+    color: blue;
+    margin: 50px;
+    font-size: 50px;
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+.all1_matter img{
+    background-color: aliceblue;
+    max-width: 30px;
+}
+.all1_matter a:hover{
+    position: relative;
+    animation-name: img1;
+    animation-duration: 2s;
+    animation-iteration-count: 1 ;
+    animation-timing-function:ease;
+    animation-fill-mode: forwards;
+}
+@keyframes img1{
+    from{
+        left:0px;
+    }
+    to{
+        left:80px;
+    }
+}
+
+
+/* ..............................section2................................ */
+.section2{
+    min-height: 100vh;
+    background-color: #185ADB;
+    width: 100%;
+}
+.all2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.all2_matter{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+.all2_matter img{
+    background-color: aliceblue;
+    max-width: 30px;
+}
+.all2_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.all2_img img{
+   margin: 80px;
+    width: 100%;
+    max-height: 600px;
+    box-shadow: 3px 3px 5px black;
+    border-radius: 200px;
+
+}
+.all2 h1{
+  
+    margin-left: 90px;
+    color: black;
+    font-size: 4rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.all2 h2{
+    margin: 100px;
+    color: aliceblue;
+    font-size: 3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+
+    position: relative;
+    animation-name: matter2_h2;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+
+}
+.all2 a{
+    
+    color: black;
+    margin: 50px;
+    font-size: 50px;
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+@keyframes matter2_h2{
+    from{
+        left:0px;
+    }
+    to{
+        left:80px;
+    }
+}
+.all2_matter a:hover{
+    position: relative;
+    animation-name: img1;
+    animation-duration: 2s;
+    animation-iteration-count: 1 ;
+    animation-timing-function:ease;
+    animation-fill-mode: forwards;
+}
+@keyframes img2{
+    from{
+        left:0px;
+    }
+    to{
+        left:80px;
+    }
+}

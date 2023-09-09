@@ -1,0 +1,452 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    /* background: url("img/background.jpg"); */
+    background-image: linear-gradient(to top, rgb(12, 12, 12) , rgb(58, 58, 57));
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+
+}
+.section1{
+    min-height: 100vh;
+    background-color: black;
+    width: 100%;
+}
+.all1{
+    
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    height: 60vh;
+}
+.all1_img img{
+    margin: 90px;
+   
+    width: 100%;
+    max-height: 500px;
+    box-shadow: 3px 3px 5px blueviolet;
+    border-radius: 200px;
+
+}
+.all1_matter{
+    margin-left: 200px;
+}
+.all1 h2{
+    margin: 100px;
+    color: aliceblue;
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+
+    position: relative;
+    animation-name: matter1_h2;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+
+}
+@keyframes matter1_h2{
+    from{
+        left: 0px;
+
+    }
+    to{
+        left:100px
+    }
+}
+.all1 h1{
+    margin: 50px;
+    color: aliceblue;
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.all1 a{
+    
+    color: blue;
+    margin: 50px;
+    font-size: 50px;
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+.all1_matter img{
+    background-color: aliceblue;
+    max-width: 30px;
+}
+.all1_matter a:hover{
+    position: relative;
+    animation-name: img1;
+    animation-duration: 2s;
+    animation-iteration-count: 1 ;
+    animation-timing-function:ease;
+    animation-fill-mode: forwards;
+}
+@keyframes img1{
+    from{
+        left:0px;
+    }
+    to{
+        left:80px;
+    }
+}
+
+
+/* ..............................section2................................ */
+.section2{
+    height: 60vh;
+    background-color: #185ADB;
+    width: 100%;
+}
+.all2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.all2_matter{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+.all2_matter img{
+    background-color: aliceblue;
+    max-width: 30px;
+}
+.all2_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.all2_img img{
+   margin: 80px;
+    width: 100%;
+    max-height: 600px;
+    box-shadow: 3px 3px 5px black;
+    border-radius: 200px;
+
+}
+.all2 h1{
+  
+    margin-left: 90px;
+    color: black;
+    font-size: 4rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.all2 h2{
+    margin: 100px;
+    color: aliceblue;
+    font-size: 3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+
+    position: relative;
+    animation-name: matter2_h2;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+
+}
+.all2 a{
+    
+    color: black;
+    margin: 50px;
+    font-size: 50px;
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+@keyframes matter2_h2{
+    from{
+        left:0px;
+    }
+    to{
+        left:80px;
+    }
+}
+.all2_matter a:hover{
+    position: relative;
+    animation-name: img1;
+    animation-duration: 2s;
+    animation-iteration-count: 1 ;
+    animation-timing-function:ease;
+    animation-fill-mode: forwards;
+}
+@keyframes img2{
+    from{
+        left:0px;
+    }
+    to{
+        left:80px;
+    }
+}
+
+.navbar{
+    height: 10vh;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ..............section 1........... */
+.main{
+    margin: 10px ;
+    height: 30vh;
+   
+    width: 100%;
+    display: flex;
+    /* position: absolute; */
+    overflow-x: hidden;
+    
+    /* background: url('img/background.jpg'); */
+}
+.main div{
+    
+    display: flex;
+    
+    
+    
+    /* height: 50vh; */
+    
+    animation: animate 40s linear infinite;
+    
+}
+@keyframes animate{
+    0%{
+        transform:translateX(100%)
+    }
+    100%{
+        transform: translateX(-100%) ;
+    }
+}
+.main div img{
+    max-width: 400px;
+    margin: 10px;
+    transition: 0.25s;
+}
+
+
+.main div img:hover{
+    border:2px solid white;
+    box-shadow: 0px 20px 40px rgba(0,0,0,0.1) ;
+}
+.main :hover div img{
+    opacity:0.05;
+    filter:blur(5px);
+
+}
+
+
+
+.buttons{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin: 20px;
+    
+}
+.buttons button{
+    padding:15px;
+    border-radius:20px;
+    margin: 20px;
+    background-image: linear-gradient(to right, rgb(50, 9, 163) , rgb(78, 222, 241));
+    color:aliceblue;
+    font-weight: 600;
+    border:transparent;
+}
+
+
+/* ..........section 2  .................. */
+p.heading{
+    background-image: linear-gradient(to right, rgb(30, 30, 31) , rgb(95, 97, 97));
+    font-size: 40px;
+    margin: 40px 60px;
+    padding: 10px;
+    border-radius: 20px;
+    border: transparent;
+    font-weight: 900;
+    font-family:  sans-serif ;
+    
+    color: rgb(254, 255, 255);
+}
+.container{
+    background: url("img/background.jpg");
+    position: fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+}
+.box{
+    padding: 4px;
+    transition: transform.2s;
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 3px  solid rgb(31, 158, 243);
+    margin: 15px 15px ;
+    border-radius: 0px 20px 20px 20px;
+    height: 400px;
+   
+    
+}
+.box img{
+    height: 40%;
+    border-radius: 20px;
+}
+.box:hover{
+    transform: scale(1.1);
+}
+button.btn1{
+    background-image: linear-gradient(to right, rgb(239, 243, 19) , rgb(241, 128, 35));
+    transition: transform.2s;
+    color: whitesmoke;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin: 10px;
+    
+}
+button.btn2{
+    background-image: linear-gradient(to right, rgb(50, 9, 163) , rgb(78, 222, 241));
+    transition: transform.2s;
+    color: whitesmoke;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+}
+button:hover{
+    transform:scale(1.1)
+}
+p.first, .rating{
+    border-radius: 0px 0px 20px 20px;
+    color: rgb(244, 248, 248);
+    text-align: center;
+   
+    padding: 10px;
+    font-weight: 600;
+    background-color: transparent;
+    
+    
+
+}
+p{
+    font-weight: 600px;
+}
+h1.sam{
+    font-size: 4rem;
+    margin: 20px;
+}
+h2.sam{
+    font-size:2rem;
+    margin: 70px 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+
+
+/* ....................section3............ */
+.DEAL{
+    /* background: url(img/image.jpg); */
+    /* background-image: linear-gradient(to right, rgb(239, 243, 19) , rgb(241, 128, 35)); */
+    background-image: linear-gradient(to right, rgb(6, 34, 71) , rgb(2, 95, 138));
+    background-position: center;
+    background-size: cover;
+    height: 70vh;
+    /* margin:  10px 60px; */
+    border-radius: 10px;
+}
+p.heading1{
+    color:rgb(78, 197, 245);
+    font-size: 2rem;
+    margin: 10px 20px;
+    box-shadow: 0px 6px 1px rgb(233, 247, 233);
+
+    
+    
+}
+h1{
+    margin: 0px;
+}
+p.content1{
+    color:rgb(158, 39, 238);
+    font-size:20px;
+    margin: 10px 20px;
+}
+
+.DEAL .section3{
+    display: flex;
+    
+    
+    /* justify-content:center; */
+    /* align-items: center; */
+    width: 100%;
+   
+}
+.content{
+    margin: 20px 60px 30px 50px;
+    width:50%;
+    font-size: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(249, 249, 250);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+   
+}
+.section3 img{
+    /* width:30%; */
+    padding: 50px;
+
+    
+    /* margin: 100px 50px; */
+    
+}
+.btn3{
+    font-size: 1rem;
+    align-items: center;
+    padding: 10px;
+    border-radius:20px;
+    margin:-10px 200px;
+    width: 200px;
+    background-color: transparent;
+    border: 3px solid cyan;
+    color :white;
+    font-weight: 900;
+
+}
+.contact{
+    height: 40vh;
+    background-color: rgb(248, 245, 245);
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.jack{
+    width: 30%;
+    margin-top: 50px;
+}
+.keyboard{
+    width: 500px;
+    
+}
+.jack2{
+    width: 25%;
+}

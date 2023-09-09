@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="style1.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="container">
+        <div class="form-box">
+            <form action="" name="login" id="login" method="post" onsubmit="return validation()">
+                <h2>REGISTER</h2>
+                <p id="result"></p>
+                <div class="input-box">
+                    <i class='bx bxs-user' style='color:#ffffff' ></i>
+                    <input type="text" name="Username" placeholder="username">
+                </div>
+                <div class="input-box">
+                    <i class='bx bxs-envelope' style='color:#ffffff' ></i>
+                    <input type="text" name="Email" placeholder="Email">
+                </div>
+                <div class="input-box">
+                    <i class='bx bxs-lock-alt' style='color:#ffffff' ></i>
+                    <input type="password" name="password" placeholder="password">
+                </div>
+                <div class="input-box">
+                    <i class='bx bxs-lock-alt' style='color:#ffffff' ></i>
+                    <input type="password" name="cpassword" placeholder="confirm password">
+                </div>
+                <div class="button">
+                    <input type="submit" onclick="validation()" class="btn" value="Register">
+                </div>
+            </form>
+        </div>
+        <div class="popup" id="popup">
+            <ion-icon name="checkmark-circle-outline"></ion-icon>
+            <h2>Thank You</h2>
+            <p>You are Registered Successfully, Thanks!</p>
+            <a href="#"><button onclick="closeslide()" >OK</button></a>
+        </div>
+    </div>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzb7d2Zw6gr2bqR4dhpzh3BzXMMHjb_P8VRW5zE33Od5An9lM2mKL8LqzXWrVCBOGQZtA/exec'
+        const form = document.forms['login']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => alert("Thank you! your form is submitted successfully." ))
+            .then(() => {  window.location.reload(); })
+            .catch(error => console.error('Error!', error.message))
+        })
+  
+      </script>
+    <script src="script1.js"></script>
+</body>
+</html>
